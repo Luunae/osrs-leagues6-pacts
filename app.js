@@ -296,11 +296,6 @@ function renderSummary() {
   const resetBtn = document.getElementById("reset-btn");
   resetBtn.disabled = state.selected.size <= 1;
 
-  if (state.selected.size <= 1) {
-    list.innerHTML = `<li class="summary-empty">Select nodes adjacent to the root to build your path.</li>`;
-    return;
-  }
-
   const groups = { neutral: [], melee: [], ranged: [], magic: [] };
   for (const id of state.selected) {
     const n = nodeMap.get(id);
