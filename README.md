@@ -31,8 +31,8 @@ style.css         # layout and theme
 
 ## Changes?
 
-If something needs fixed, let me know. It's currently GoodEnoughTM.
-Want a tag added? Also let me know.
+If something needs fixed, let me know. It's currently GoodEnoughTM.  
+Want a tag added? Also let me know.  
 Want world peace? Same. :(
 
 ## AI Disclaimer
