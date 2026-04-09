@@ -303,7 +303,6 @@ function renderSummary() {
 
   const groups = { neutral: [], melee: [], ranged: [], magic: [] };
   for (const id of state.selected) {
-    if (id === ROOT_ID) continue;
     const n = nodeMap.get(id);
     if (n) groups[n.type].push(n);
   }
