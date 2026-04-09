@@ -1,0 +1,2000 @@
+[
+  {
+    "row_id": "node1",
+    "linked_nodes": [
+      "node2",
+      "node74",
+      "node44",
+      "node62",
+      "node92",
+      "node93"
+    ],
+    "name_raw": "+#% chance to Regenerate runes, ammo and charges\n\nRegenerate: Whenever you use runes to cast a spell, fire ammunition from a ranged weapon or consume charges with a charged weapon there is a % chance to generate an additional resource spent",
+    "effect_name": "talent_regen_ammo",
+    "effect_value": "50",
+    "node_sprite": "league_6_combat_mastery_small,30",
+    "x": 0,
+    "y": 0,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node2",
+    "linked_nodes": [
+      "node1",
+      "node3",
+      "node4",
+      "node5"
+    ],
+    "name_raw": "Whenever you Regenerate ammo, you have a +#% chance to fire a Ranged echo against the enemy\n\nRanged echo: An additional ranged attack which rolls with your ranged accuracy against the targets ranged defence. Echo attacks cannot trigger additional echo attacks.",
+    "effect_name": "talent_ranged_regen_echo_chance",
+    "effect_value": "25",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,18",
+    "x": 0,
+    "y": 50,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node3",
+    "linked_nodes": [
+      "node2",
+      "node6"
+    ],
+    "name_raw": "While a bow is equipped, Ranged echoes never miss\n\nAll bow pacts will not work with an Eclipse Atlatl",
+    "effect_name": "talent_bow_always_pass_accuracy",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,19",
+    "x": -100,
+    "y": 100,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node4",
+    "linked_nodes": [
+      "node2",
+      "node7"
+    ],
+    "name_raw": "While a crossbow is equipped, you have a +#% chance to trigger Ranged echoes",
+    "effect_name": "talent_crossbow_echo_reproc_chance",
+    "effect_value": "15",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,25",
+    "x": 0,
+    "y": 100,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node5",
+    "linked_nodes": [
+      "node2",
+      "node8"
+    ],
+    "name_raw": "While a thrown weapon is equipped, Ranged echoes have a 20% chance to max hit\n\nAll thrown weapon pacts will work with an Eclipse Atlatl",
+    "effect_name": "talent_thrown_maxhit_echoes",
+    "effect_value": "20",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,24",
+    "x": 100,
+    "y": 100,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node6",
+    "linked_nodes": [
+      "node3",
+      "node9",
+      "node10",
+      "node64"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": -100,
+    "y": 150,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node7",
+    "linked_nodes": [
+      "node4",
+      "node10",
+      "node11"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "15",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": 0,
+    "y": 150,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node8",
+    "linked_nodes": [
+      "node5",
+      "node11",
+      "node12",
+      "node99"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": 100,
+    "y": 150,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node9",
+    "linked_nodes": [
+      "node6",
+      "node13"
+    ],
+    "name_raw": "You have a 5% chance per attack in any style to roll max accuracy, this is increased by 5% for each tile distance between you and your target",
+    "effect_name": "talent_max_accuracy_roll_from_range",
+    "effect_value": "[Constant: true]",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": -150,
+    "y": 200,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node10",
+    "linked_nodes": [
+      "node6",
+      "node7",
+      "node15"
+    ],
+    "name_raw": "+#% chance to Regenerate runes, ammo and charges",
+    "effect_name": "talent_regen_ammo",
+    "effect_value": "30",
+    "node_sprite": "league_6_combat_mastery_small,30",
+    "x": -50,
+    "y": 200,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node11",
+    "linked_nodes": [
+      "node7",
+      "node8",
+      "node17"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "35",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": 50,
+    "y": 200,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node12",
+    "linked_nodes": [
+      "node8",
+      "node19"
+    ],
+    "name_raw": "While an off-hand item is equipped, gain +5\u00a0melee strength, +5 ranged strength and +2% magic damage",
+    "effect_name": "talent_offhand_stat_boost",
+    "effect_value": "[Constant: true]",
+    "node_sprite": "soul_wars_staticons,7",
+    "x": 150,
+    "y": 200,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node13",
+    "linked_nodes": [
+      "node9",
+      "node14",
+      "node20"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -150,
+    "y": 250,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node14",
+    "linked_nodes": [
+      "node13",
+      "node15"
+    ],
+    "name_raw": "Ranged prayers are 30% more effective",
+    "effect_name": "talent_buffed_ranged_prayers",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": -100,
+    "y": 250,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node15",
+    "linked_nodes": [
+      "node10",
+      "node14",
+      "node16",
+      "node21"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -50,
+    "y": 250,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node16",
+    "linked_nodes": [
+      "node15",
+      "node17"
+    ],
+    "name_raw": "Ranged strength is increased by 1 for every 10 hitpoints difference between your current hitpoints and Hitpoints level",
+    "effect_name": "talent_ranged_strength_hp_difference",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 0,
+    "y": 250,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node17",
+    "linked_nodes": [
+      "node11",
+      "node16",
+      "node18",
+      "node21"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 50,
+    "y": 250,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node18",
+    "linked_nodes": [
+      "node17",
+      "node19"
+    ],
+    "name_raw": "Ranged echoes can now trigger additional Ranged echoes at half your chance to trigger them (up to 4 times)",
+    "effect_name": "talent_ranged_echo_cyclical",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 100,
+    "y": 250,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node19",
+    "linked_nodes": [
+      "node12",
+      "node18",
+      "node22"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 150,
+    "y": 250,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node20",
+    "linked_nodes": [
+      "node13",
+      "node23",
+      "node103"
+    ],
+    "name_raw": "Bows attack 1 tick (0.6s) faster",
+    "effect_name": "talent_bow_fast_hits",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -150,
+    "y": 300,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node21",
+    "linked_nodes": [
+      "node15",
+      "node17",
+      "node24"
+    ],
+    "name_raw": "Crossbows attack 2 ticks (1.2s) slower, but deal +70% damage",
+    "effect_name": "talent_crossbow_slow_big_hits",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 0,
+    "y": 300,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node22",
+    "linked_nodes": [
+      "node19",
+      "node25",
+      "node91"
+    ],
+    "name_raw": "While a thrown weapon is equipped, ranged strength is also increased by your 80% of your melee strength",
+    "effect_name": "talent_thrown_weapon_melee_str_scale",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 150,
+    "y": 300,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node23",
+    "linked_nodes": [
+      "node20",
+      "node27",
+      "node38"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -150,
+    "y": 350,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node24",
+    "linked_nodes": [
+      "node21",
+      "node30",
+      "node38",
+      "node39"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 0,
+    "y": 350,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node25",
+    "linked_nodes": [
+      "node22",
+      "node33",
+      "node39"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 150,
+    "y": 350,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node26",
+    "linked_nodes": [
+      "node27"
+    ],
+    "name_raw": "Hitting with a bow increases your bows minimum hit by 1, capping at 15% of your base maximum hit. This bonus is halved when you take damage that you didn't or couldn't pray against",
+    "effect_name": "talent_bow_min_hit_stacking_increase",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -185,
+    "y": 450,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node27",
+    "linked_nodes": [
+      "node23",
+      "node26",
+      "node28"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -150,
+    "y": 400,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node28",
+    "linked_nodes": [
+      "node27"
+    ],
+    "name_raw": "Hitting with a bow increases your bows maximum hit by 1, capping at 15% of your base maximum hit. This bonus is halved when you take damage that you didn't or couldn't pray against",
+    "effect_name": "talent_bow_max_hit_stacking_increase",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -115,
+    "y": 450,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node29",
+    "linked_nodes": [
+      "node30"
+    ],
+    "name_raw": "Crossbow hits always max hit",
+    "effect_name": "talent_crossbow_max_hit",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -35,
+    "y": 450,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node30",
+    "linked_nodes": [
+      "node24",
+      "node29",
+      "node31"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 0,
+    "y": 400,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node31",
+    "linked_nodes": [
+      "node30"
+    ],
+    "name_raw": "Crossbows attacks roll accuracy twice",
+    "effect_name": "talent_crossbow_double_accuracy_roll",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 35,
+    "y": 450,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node32",
+    "linked_nodes": [
+      "node33"
+    ],
+    "name_raw": "While a thrown weapon is equipped, increase your ranged accuracy by #",
+    "effect_name": "talent_thrown_weapon_accuracy",
+    "effect_value": "60",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 115,
+    "y": 450,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node33",
+    "linked_nodes": [
+      "node25",
+      "node32",
+      "node34"
+    ],
+    "name_raw": "+#% Ranged damage",
+    "effect_name": "talent_percentage_ranged_damage",
+    "effect_value": "1",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 150,
+    "y": 400,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node34",
+    "linked_nodes": [
+      "node33"
+    ],
+    "name_raw": "When attacking with a thrown weapon, you now throw at an additional nearby target",
+    "effect_name": "talent_thrown_weapon_multi",
+    "effect_value": "[Constant: true]",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 185,
+    "y": 450,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node38",
+    "linked_nodes": [
+      "node23",
+      "node24"
+    ],
+    "name_raw": "Whenever you Regenerate ammo, you have a +#% chance to fire a Ranged echo against the enemy\n\nRanged echo: An additional ranged attack which rolls with your ranged accuracy against the targets ranged defence. Echo attacks cannot trigger additional echo attacks.",
+    "effect_name": "talent_ranged_regen_echo_chance",
+    "effect_value": "5",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": -75,
+    "y": 360,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node39",
+    "linked_nodes": [
+      "node24",
+      "node25"
+    ],
+    "name_raw": "Whenever you Regenerate ammo, you have a +#% chance to fire a Ranged echo against the enemy\n\nRanged echo: An additional ranged attack which rolls with your ranged accuracy against the targets ranged defence. Echo attacks cannot trigger additional echo attacks.",
+    "effect_name": "talent_ranged_regen_echo_chance",
+    "effect_value": "5",
+    "node_type": "ranged",
+    "node_sprite": "league_6_combat_mastery_small,22",
+    "x": 75,
+    "y": 360,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node43",
+    "linked_nodes": [
+      "node74",
+      "node83"
+    ],
+    "name_raw": "Melee range is doubled whilst using two handed weapons.",
+    "effect_name": "talent_melee_range_multiplier",
+    "effect_value": "2",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,1",
+    "x": 237,
+    "y": -63,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node44",
+    "linked_nodes": [
+      "node1",
+      "node45",
+      "node46",
+      "node47",
+      "node48"
+    ],
+    "name_raw": "Whenever your combat spells Regenerate runes, your Magic level is boosted by 1 for 30 ticks (18s)\n\nThis boost cannot exceed 10 Magic levels and additional triggers reset the duration",
+    "effect_name": "talent_regen_magic_level_boost",
+    "effect_value": "10",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,36",
+    "x": -88,
+    "y": -63,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node45",
+    "linked_nodes": [
+      "node44",
+      "node55"
+    ],
+    "name_raw": "Whenever your combat spells Regenerate air runes, you have a #% chance to restore 1 prayer point per rune regenerated",
+    "effect_name": "talent_airrune_regen_prayer_restore",
+    "effect_value": "15",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,42",
+    "x": -237,
+    "y": -63,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node46",
+    "linked_nodes": [
+      "node44",
+      "node56"
+    ],
+    "name_raw": "Whenever your combat spells Regenerate water runes, you're healed for 1 per rune regenerated",
+    "effect_name": "talent_waterrune_regen_healing",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,43",
+    "x": -200,
+    "y": -100,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node47",
+    "linked_nodes": [
+      "node44",
+      "node56"
+    ],
+    "name_raw": "Whenever your combat spells Regenerate fire runes, the damage of your next spell hit is increased by # per rune regenerated",
+    "effect_name": "talent_firerune_regen_damage_boost",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,45",
+    "x": -125,
+    "y": -175,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node48",
+    "linked_nodes": [
+      "node44",
+      "node57"
+    ],
+    "name_raw": "Whenever your combat spells Regenerate earth runes, your Defence level is boosted by 1 per rune regenerated for 30 ticks (18s).\n\nThis boost cannot exceed 20% of your base Defence level and additional triggers reset the duration.",
+    "effect_name": "talent_earthrune_regen_defence_boost",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,44",
+    "x": -88,
+    "y": -212,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node53",
+    "linked_nodes": [
+      "node68",
+      "node166"
+    ],
+    "name_raw": "Whenever you Regenerate charges from a powered staff or wand, also Regenerate 1 water rune",
+    "effect_name": "talent_regen_stave_charges_water",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,38",
+    "x": -313,
+    "y": -137,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node54",
+    "linked_nodes": [
+      "node69",
+      "node167"
+    ],
+    "name_raw": "Whenever you Regenerate charges from a powered staff or wand, also Regenerate 1 fire rune",
+    "effect_name": "talent_regen_stave_charges_fire",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,38",
+    "x": -213,
+    "y": -337,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node55",
+    "linked_nodes": [
+      "node45",
+      "node58",
+      "node59"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "15",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": -287,
+    "y": -112,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node56",
+    "linked_nodes": [
+      "node46",
+      "node47",
+      "node59",
+      "node60"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "15",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": -213,
+    "y": -187,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node57",
+    "linked_nodes": [
+      "node48",
+      "node60",
+      "node61"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "15",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": -138,
+    "y": -262,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node58",
+    "linked_nodes": [
+      "node55",
+      "node63",
+      "node67"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "35",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": -325,
+    "y": -75,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node59",
+    "linked_nodes": [
+      "node55",
+      "node56",
+      "node68"
+    ],
+    "name_raw": "Healing with Demonic Pacts overheals you, up to +#% of your base Hitpoints level",
+    "effect_name": "talent_overhealing_via_talents",
+    "effect_value": "30",
+    "node_sprite": "league_6_combat_mastery_small,13",
+    "x": -250,
+    "y": -150,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node60",
+    "linked_nodes": [
+      "node56",
+      "node57",
+      "node69"
+    ],
+    "name_raw": "+#% chance to Regenerate runes, ammo and charges",
+    "effect_name": "talent_regen_ammo",
+    "effect_value": "30",
+    "node_sprite": "league_6_combat_mastery_small,30",
+    "x": -175,
+    "y": -225,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node61",
+    "linked_nodes": [
+      "node57",
+      "node70",
+      "node94"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "15",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": -100,
+    "y": -300,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node62",
+    "linked_nodes": [
+      "node1",
+      "node63",
+      "node64"
+    ],
+    "name_raw": "+#% chance to Regenerate runes, ammo and charges",
+    "effect_name": "talent_regen_ammo",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,30",
+    "x": -200,
+    "y": 25,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node63",
+    "linked_nodes": [
+      "node58",
+      "node62"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": -325,
+    "y": 25,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node64",
+    "linked_nodes": [
+      "node6",
+      "node62",
+      "node65"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": -200,
+    "y": 150,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node65",
+    "linked_nodes": [
+      "node64",
+      "node66"
+    ],
+    "name_raw": "Whenever you max hit from at least 3 tiles away, your next hit from a different style deals +25% damage",
+    "effect_name": "talent_max_hit_style_swap",
+    "effect_value": "[Constant: true]",
+    "node_sprite": "hitmark,24",
+    "x": -262,
+    "y": 212,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node66",
+    "linked_nodes": [
+      "node65",
+      "node102"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": -325,
+    "y": 150,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node67",
+    "linked_nodes": [
+      "node58",
+      "node107",
+      "node166"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -375,
+    "y": -125,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node68",
+    "linked_nodes": [
+      "node53",
+      "node59",
+      "node112",
+      "node122",
+      "node133"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -300,
+    "y": -200,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node69",
+    "linked_nodes": [
+      "node54",
+      "node60",
+      "node117",
+      "node133",
+      "node122"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -225,
+    "y": -275,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node70",
+    "linked_nodes": [
+      "node61",
+      "node127",
+      "node167"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -150,
+    "y": -350,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node71",
+    "linked_nodes": [
+      "node74",
+      "node81"
+    ],
+    "name_raw": "While you have a shield equipped you gain the Thorns effect\n\nThorns: Whenever you're attacked enemies will be instantly hit with # melee damage. This effect can only trigger once per hit-splat and will trigger if you take 0 damage. Other pacts will specify if they effect Thorns.",
+    "effect_name": "talent_thorns_damage",
+    "effect_value": "3",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,29",
+    "x": 88,
+    "y": -212,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node72",
+    "linked_nodes": [
+      "node74",
+      "node82"
+    ],
+    "name_raw": "Melee weapons under 1kg always trigger an additional melee hit using 40% of your base max hit (minimum of 1)\n\nThis will not trigger on special attacks.",
+    "effect_name": "talent_light_weapon_doublehit",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,27",
+    "x": 125,
+    "y": -175,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node73",
+    "linked_nodes": [
+      "node74",
+      "node82"
+    ],
+    "name_raw": "Each melee attack with a heavy melee weapon (>=1kg) has a #% chance to trigger an instant Blindbag attack.\n\nBlindbag: Automatically attack your current target with a random heavy melee weapon in your inventory as though you have equipped it, ignoring all stat requirements and attack delay. Blindbag attacks can trigger additional Blindbag attacks but cannot trigger from special attacks",
+    "effect_name": "talent_free_random_weapon_attack_chance",
+    "effect_value": "15",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,10",
+    "x": 200,
+    "y": -100,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node74",
+    "linked_nodes": [
+      "node1",
+      "node71",
+      "node72",
+      "node73",
+      "node43"
+    ],
+    "name_raw": "Your minimum hit when attacking with a melee weapon is increased by #.\n\nThis minimum hit is further increased by # for each additional tile between you and the target",
+    "effect_name": "talent_distance_melee_minhit",
+    "effect_value": "3",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,6",
+    "x": 88,
+    "y": -63,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node79",
+    "linked_nodes": [
+      "node146",
+      "node163"
+    ],
+    "name_raw": "Melee weapons that are under 1kg or one handed, increase your melee strength by 20% of your Strength level",
+    "effect_name": "talent_multi_hit_str_increase",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 213,
+    "y": -337,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node80",
+    "linked_nodes": [
+      "node156",
+      "node157"
+    ],
+    "name_raw": "Attacking with a melee weapon or Thorns has a +#% chance to heal you based off your distance between you and your target (1 tile = 1 health)",
+    "effect_name": "talent_melee_distance_healing_chance",
+    "effect_value": "10",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,13",
+    "x": 362,
+    "y": -187,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node81",
+    "linked_nodes": [
+      "node71",
+      "node84",
+      "node85"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": 138,
+    "y": -262,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node82",
+    "linked_nodes": [
+      "node72",
+      "node73",
+      "node85",
+      "node86"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "15",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": 213,
+    "y": -187,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node83",
+    "linked_nodes": [
+      "node43",
+      "node86",
+      "node88"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "15",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": 287,
+    "y": -112,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node84",
+    "linked_nodes": [
+      "node81",
+      "node95",
+      "node145"
+    ],
+    "name_raw": "While you have a shield equipped, you have a 0.1% chance per Defence level to reflect all damage back to the attacker",
+    "effect_name": "talent_shield_reflect",
+    "effect_value": "[Constant: true]",
+    "node_sprite": "hitmark,27",
+    "x": 100,
+    "y": -300,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node85",
+    "linked_nodes": [
+      "node81",
+      "node82",
+      "node163"
+    ],
+    "name_raw": "Special attacks have a #% chance to not consume any energy",
+    "effect_name": "talent_spec_for_free",
+    "effect_value": "20",
+    "node_sprite": "league_6_combat_mastery_small,17",
+    "x": 175,
+    "y": -225,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node86",
+    "linked_nodes": [
+      "node82",
+      "node83",
+      "node161"
+    ],
+    "name_raw": "+#% accuracy in all combat styles",
+    "effect_name": "talent_all_style_accuracy",
+    "effect_value": "35",
+    "node_sprite": "league_6_combat_mastery_small,11",
+    "x": 250,
+    "y": -150,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node87",
+    "linked_nodes": [
+      "node101",
+      "node164"
+    ],
+    "name_raw": "+#% chance to Regenerate runes, ammo and charges",
+    "effect_name": "talent_regen_ammo",
+    "effect_value": "30",
+    "node_sprite": "league_6_combat_mastery_small,30",
+    "x": 262,
+    "y": 87,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node88",
+    "linked_nodes": [
+      "node83",
+      "node98",
+      "node156"
+    ],
+    "name_raw": "Whenever you attack an enemy from at least 2 tiles away with any style, you restore 2% special attack energy",
+    "effect_name": "talent_restore_sa_energy_from_distance",
+    "effect_value": "[Constant: true]",
+    "node_sprite": "orb_icon,6",
+    "x": 325,
+    "y": -75,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node91",
+    "linked_nodes": [
+      "node22",
+      "node164"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": 425,
+    "y": 300,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node92",
+    "linked_nodes": [
+      "node1",
+      "node94",
+      "node95"
+    ],
+    "name_raw": "+#% chance to Regenerate runes, ammo and charges",
+    "effect_name": "talent_regen_ammo",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,30",
+    "x": 0,
+    "y": -200,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node93",
+    "linked_nodes": [
+      "node1",
+      "node98",
+      "node99"
+    ],
+    "name_raw": "+#% chance to Regenerate runes, ammo and charges",
+    "effect_name": "talent_regen_ammo",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,30",
+    "x": 200,
+    "y": 25,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node94",
+    "linked_nodes": [
+      "node61",
+      "node92",
+      "node96"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": -50,
+    "y": -250,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node95",
+    "linked_nodes": [
+      "node84",
+      "node92"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": 50,
+    "y": -250,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node96",
+    "linked_nodes": [
+      "node94",
+      "node97"
+    ],
+    "name_raw": "Healing with Demonic Pacts overheals you, up to +#% of your base Hitpoints level",
+    "effect_name": "talent_overhealing_via_talents",
+    "effect_value": "30",
+    "node_sprite": "league_6_combat_mastery_small,13",
+    "x": 0,
+    "y": -300,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node97",
+    "linked_nodes": [
+      "node96",
+      "node135"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": -50,
+    "y": -350,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node98",
+    "linked_nodes": [
+      "node88",
+      "node93"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": 325,
+    "y": 25,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node99",
+    "linked_nodes": [
+      "node8",
+      "node93",
+      "node100"
+    ],
+    "name_raw": "+# permanent Defence level boost",
+    "effect_name": "talent_defence_boost",
+    "effect_value": "5",
+    "node_sprite": "league_6_combat_mastery_small,12",
+    "x": 200,
+    "y": 150,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node100",
+    "linked_nodes": [
+      "node99",
+      "node101"
+    ],
+    "name_raw": "Healing with Demonic Pacts overheals you, up to +#% of your base Hitpoints level",
+    "effect_name": "talent_overhealing_via_talents",
+    "effect_value": "30",
+    "node_sprite": "league_6_combat_mastery_small,13",
+    "x": 262,
+    "y": 212,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node101",
+    "linked_nodes": [
+      "node100",
+      "node87"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": 325,
+    "y": 150,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node102",
+    "linked_nodes": [
+      "node66",
+      "node106"
+    ],
+    "name_raw": "While protection prayers are not active, you restore 1 Prayer point every 15 ticks (9s), this is sped up by 1 tick (0.6s) for every 7 worn prayer bonus you have",
+    "effect_name": "talent_prayer_restore_no_overhead",
+    "effect_value": "[Constant: true]",
+    "node_sprite": "icon_stat_50x50,4",
+    "x": -262,
+    "y": 87,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node103",
+    "linked_nodes": [
+      "node20",
+      "node106"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": -425,
+    "y": 300,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node106",
+    "linked_nodes": [
+      "node102",
+      "node103",
+      "node107"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": -425,
+    "y": 87,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node107",
+    "linked_nodes": [
+      "node106",
+      "node67",
+      "node108"
+    ],
+    "name_raw": "Air spells deal +#% damage for each active prayer",
+    "effect_name": "talent_air_spell_damage_active_prayers",
+    "effect_value": "7",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,42",
+    "x": -425,
+    "y": -175,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node108",
+    "linked_nodes": [
+      "node107",
+      "node109",
+      "node111"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -475,
+    "y": -225,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node109",
+    "linked_nodes": [
+      "node108"
+    ],
+    "name_raw": "Air spells have a +#% chance to max hit for every 1 prayer bonus, this chance is doubled against enemies weak to air spells",
+    "effect_name": "talent_air_spell_max_hit_prayer_bonus",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,42",
+    "x": -525,
+    "y": -275,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node111",
+    "linked_nodes": [
+      "node108"
+    ],
+    "name_raw": "Smoke spells now count as 'air' spells",
+    "effect_name": "talent_smoke_counts_as_air",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,46",
+    "x": -437,
+    "y": -262,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node112",
+    "linked_nodes": [
+      "node68",
+      "node113"
+    ],
+    "name_raw": "Water spells deal increased damage the higher health percentage you have (+20% damage at 100% health)",
+    "effect_name": "talent_water_spell_damage_high_hp",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,43",
+    "x": -350,
+    "y": -250,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node113",
+    "linked_nodes": [
+      "node112",
+      "node114",
+      "node123"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -400,
+    "y": -300,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node114",
+    "linked_nodes": [
+      "node113"
+    ],
+    "name_raw": "Water spell hits bounce back to you, healing you for the 60% of the damage dealt to your target",
+    "effect_name": "talent_water_spell_bouce_heal",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,43",
+    "x": -450,
+    "y": -350,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node117",
+    "linked_nodes": [
+      "node69",
+      "node118"
+    ],
+    "name_raw": "Fire spell casts burn up to 6% of your maximum Hitpoints to increase your damage dealt by double the amount burned for.\n\nThis effect cannot kill you directly.",
+    "effect_name": "talent_fire_hp_consume_for_damage",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,45",
+    "x": -275,
+    "y": -325,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node118",
+    "linked_nodes": [
+      "node117",
+      "node119",
+      "node124"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -325,
+    "y": -375,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node119",
+    "linked_nodes": [
+      "node118"
+    ],
+    "name_raw": "Fire spell hits apply 1 burn (max 5) and bounce to up to 2 nearby targets",
+    "effect_name": "talent_fire_spell_burn_bounce",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,45",
+    "x": -375,
+    "y": -425,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node122",
+    "linked_nodes": [
+      "node68",
+      "node69"
+    ],
+    "name_raw": "Attack rate with combat spells in a spellbook is sped up by # ticks\n\nThis cannot reduce attack rate below 2 ticks (1.2s)",
+    "effect_name": "talent_magic_attack_speed_traditional",
+    "effect_value": "2",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,40",
+    "x": -288,
+    "y": -262,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node123",
+    "linked_nodes": [
+      "node113"
+    ],
+    "name_raw": "Ice spells now count as 'water' spells",
+    "effect_name": "talent_ice_counts_as_water",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,49",
+    "x": -338,
+    "y": -312,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node124",
+    "linked_nodes": [
+      "node118"
+    ],
+    "name_raw": "Blood spells now count as 'fire' spells",
+    "effect_name": "talent_blood_counts_as_fire",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,48",
+    "x": -388,
+    "y": -362,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node127",
+    "linked_nodes": [
+      "node70",
+      "node128",
+      "node134"
+    ],
+    "name_raw": "Earth spell hits reduce the enemies Defence & Magic Defence levels by 2",
+    "effect_name": "talent_earth_reduce_defence",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,44",
+    "x": -200,
+    "y": -400,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node128",
+    "linked_nodes": [
+      "node127",
+      "node129",
+      "node131"
+    ],
+    "name_raw": "+#% Magic damage\n\nThis bonus is multiplied by the Tumeken's Shadow special effect",
+    "effect_name": "talent_percentage_magic_damage",
+    "effect_value": "1",
+    "node_type": "magic",
+    "node_sprite": "icon_stat_50x50,5",
+    "x": -250,
+    "y": -450,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node129",
+    "linked_nodes": [
+      "node128"
+    ],
+    "name_raw": "Earth spells deal additional flat damage based on your current Defence level (+1 damage per # Defence levels)",
+    "effect_name": "talent_earth_scale_defence_stat",
+    "effect_value": "12",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,44",
+    "x": -300,
+    "y": -500,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node131",
+    "linked_nodes": [
+      "node128"
+    ],
+    "name_raw": "Shadow spells, now count as 'earth' spells",
+    "effect_name": "talent_shadow_counts_as_earth",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,47",
+    "x": -288,
+    "y": -412,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node133",
+    "linked_nodes": [
+      "node69",
+      "node68"
+    ],
+    "name_raw": "Attack rate with powered staves is sped up by # ticks\nAll one handed powered staves have their max hit reduced by 8\n\nThis cannot reduce attack rate below 1 tick (0.6s)",
+    "effect_name": "talent_magic_attack_speed_powered",
+    "effect_value": "3",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,40",
+    "x": -238,
+    "y": -212,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node134",
+    "linked_nodes": [
+      "node127",
+      "node136"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": -100,
+    "y": -500,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node135",
+    "linked_nodes": [
+      "node97",
+      "node136"
+    ],
+    "name_raw": "Whenever an attack deals 0 damage to you while either a two-handed shield or an off-hand is equipped, you're healed for 2 and restore 2 prayer points",
+    "effect_name": "talent_shield_block_heal",
+    "effect_value": "[Constant: true]",
+    "node_sprite": "hitmark,0",
+    "x": 0,
+    "y": -400,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node136",
+    "linked_nodes": [
+      "node134",
+      "node135",
+      "node139"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": 100,
+    "y": -500,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node139",
+    "linked_nodes": [
+      "node136",
+      "node140",
+      "node145"
+    ],
+    "name_raw": "All recoil & Thorns style effects deal additional damage equal to 1% of your total defence bonuses",
+    "effect_name": "talent_defence_recoil_scaling",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "combat_shield",
+    "x": 200,
+    "y": -400,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node140",
+    "linked_nodes": [
+      "node139",
+      "node141"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 250,
+    "y": -450,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node141",
+    "linked_nodes": [
+      "node140"
+    ],
+    "name_raw": "When the Thorns effect triggers, it will always hit twice, dealing 50% of its damage in the second hit.",
+    "effect_name": "talent_thorns_double_hit",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "combat_shield",
+    "x": 300,
+    "y": -500,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node142",
+    "linked_nodes": [
+      "node143",
+      "node163"
+    ],
+    "name_raw": "Melee weapons under 1kg attack 1 tick (0.6s) faster",
+    "effect_name": "talent_light_weapon_faster",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "account_icons,0",
+    "x": 275,
+    "y": -325,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node143",
+    "linked_nodes": [
+      "node142",
+      "node144"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 325,
+    "y": -375,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node144",
+    "linked_nodes": [
+      "node143"
+    ],
+    "name_raw": "Whenever you deal damage with a melee weapon, you restore #% special attack energy per hit",
+    "effect_name": "talent_hit_restore_spec_energy",
+    "effect_value": "2",
+    "node_type": "melee",
+    "node_sprite": "hitmark,1",
+    "x": 375,
+    "y": -425,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node145",
+    "linked_nodes": [
+      "node84",
+      "node139",
+      "node146"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 150,
+    "y": -350,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node146",
+    "linked_nodes": [
+      "node79",
+      "node145"
+    ],
+    "name_raw": "Attacking with a melee weapon or Thorns has a +#% chance to heal you based off your distance between you and your target (1 tile = 1 health)",
+    "effect_name": "talent_melee_distance_healing_chance",
+    "effect_value": "10",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,13",
+    "x": 163,
+    "y": -287,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node150",
+    "linked_nodes": [
+      "node151",
+      "node161"
+    ],
+    "name_raw": "For each unique heavy melee weapon (>=1kg) in your inventory, your chance of a Blindbag trigger is increased by 2% up to a maximum of 10% (5 weapons)",
+    "effect_name": "talent_unique_blindbag_chance",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,10",
+    "x": 350,
+    "y": -250,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node151",
+    "linked_nodes": [
+      "node150",
+      "node152"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 400,
+    "y": -300,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node152",
+    "linked_nodes": [
+      "node151"
+    ],
+    "name_raw": "For each unique heavy melee weapon (>=1kg) in your inventory, the max hit of your Blindbag attacks is increased by #% up to a maximum of 10% (5 weapons)",
+    "effect_name": "talent_unique_blindbag_damage",
+    "effect_value": "2",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,10",
+    "x": 450,
+    "y": -350,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node153",
+    "linked_nodes": [
+      "node154",
+      "node156",
+      "node164"
+    ],
+    "name_raw": "Your maximum hit when attacking with a melee weapon is increased by #% and an additional #% for every 3 tiles of distance between you and your target",
+    "effect_name": "talent_percentage_melee_maxhit_distance",
+    "effect_value": "4",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 425,
+    "y": -175,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node154",
+    "linked_nodes": [
+      "node153",
+      "node155"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 475,
+    "y": -225,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node155",
+    "linked_nodes": [
+      "node154"
+    ],
+    "name_raw": "If your melee attack range is at least 4, it is increased to 7\n\nAll halberds slower than 5 ticks have their attack rate set to 5 ticks (3.0s)",
+    "effect_name": "talent_melee_range_conditional_boost",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,6",
+    "x": 525,
+    "y": -275,
+    "node_size": "node_capstone"
+  },
+  {
+    "row_id": "node156",
+    "linked_nodes": [
+      "node80",
+      "node88",
+      "node153"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 375,
+    "y": -125,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node157",
+    "linked_nodes": [
+      "node80",
+      "node161"
+    ],
+    "name_raw": "When hitting a target with a two handed melee weapon, you have a 5% chance to trigger a Ranged echo as if you have a bow, crossbow and thrown weapon equipped.\n\nRanged echo: An additional ranged attack which rolls with your melee stats instead of ranged. Echo attacks cannot trigger additional echo attacks.",
+    "effect_name": "talent_2h_melee_echos",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "league_6_combat_mastery_small,18",
+    "x": 312,
+    "y": -137,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node161",
+    "linked_nodes": [
+      "node86",
+      "node150",
+      "node157",
+      "node165"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 300,
+    "y": -200,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node162",
+    "linked_nodes": [
+      "node163",
+      "node165"
+    ],
+    "name_raw": "Melee strength is increased by 50% of your worn prayer bonus",
+    "effect_name": "talent_melee_strength_prayer_bonus",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": 238,
+    "y": -212,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node163",
+    "linked_nodes": [
+      "node79",
+      "node85",
+      "node142",
+      "node162"
+    ],
+    "name_raw": "+#% Melee damage",
+    "effect_name": "talent_percentage_melee_damage",
+    "effect_value": "1",
+    "node_type": "melee",
+    "node_sprite": "icon_stat_50x50,1",
+    "x": 225,
+    "y": -275,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node164",
+    "linked_nodes": [
+      "node87",
+      "node91",
+      "node153"
+    ],
+    "name_raw": "All attacks have +#% Prayer penetration (up to 100%)",
+    "effect_name": "talent_prayer_pen_all",
+    "effect_value": "15",
+    "node_sprite": "soul_wars_staticons,6",
+    "x": 425,
+    "y": 87,
+    "node_size": "node_minor"
+  },
+  {
+    "row_id": "node165",
+    "linked_nodes": [
+      "node161",
+      "node162"
+    ],
+    "name_raw": "Attacks with a melee weapon can consume 5 overhealed hitpoints (if available), increasing your minimum hit on that attack by 5",
+    "effect_name": "talent_overheal_consumption_boost",
+    "effect_value": "[Constant: true]",
+    "node_type": "melee",
+    "node_sprite": "osm_status_icons,5",
+    "x": 288,
+    "y": -262,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node166",
+    "linked_nodes": [
+      "node67",
+      "node53"
+    ],
+    "name_raw": "Whenever you Regenerate charges from a powered staff or wand, also Regenerate 1 air rune",
+    "effect_name": "talent_regen_stave_charges_air",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,38",
+    "x": -363,
+    "y": -187,
+    "node_size": "node_major"
+  },
+  {
+    "row_id": "node167",
+    "linked_nodes": [
+      "node54",
+      "node70"
+    ],
+    "name_raw": "Whenever you Regenerate charges from a powered staff or wand, also Regenerate 1 earth rune",
+    "effect_name": "talent_regen_stave_charges_earth",
+    "effect_value": "[Constant: true]",
+    "node_type": "magic",
+    "node_sprite": "league_6_combat_mastery_small,38",
+    "x": -163,
+    "y": -287,
+    "node_size": "node_major"
+  }
+]

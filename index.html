@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSRS Leagues VI — Demonic Pacts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <!-- ── Header ──────────────────────────────────────────────────────────── -->
+    <header>
+      <div class="header-title">
+        <h1>Leagues VI: Demonic Pacts</h1>
+      </div>
+
+      <div class="points-block">
+        <div class="points-row">
+          <strong id="points-used">1</strong>
+          <span>/ 40 pact points</span>
+          <span>(<strong id="points-remaining">39</strong> remaining)</span>
+        </div>
+        <div class="points-bar" aria-hidden="true">
+          <div id="points-bar-fill" class="points-bar-fill" style="width:2.5%"></div>
+        </div>
+      </div>
+
+      <div class="legend" aria-label="Category legend">
+        <span class="legend-item" style="--c:#c8aa6e">Neutral</span>
+        <span class="legend-item" style="--c:#e04040">Melee</span>
+        <span class="legend-item" style="--c:#4caf50">Ranged</span>
+        <span class="legend-item" style="--c:#5ba0e0">Magic</span>
+      </div>
+
+      <div class="header-hint-row">
+        <span class="header-hint">Scroll to zoom &nbsp;·&nbsp; Drag to pan &nbsp;·&nbsp; Click node to select</span>
+        <a class="github-link" href="https://github.com/Lunae/osrs-leagues-6-pacts" target="_blank" rel="noopener" aria-label="View on GitHub">
+          <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+              -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+              .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27
+              c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8
+              c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- ── Tree ────────────────────────────────────────────────────────────── -->
+    <main id="tree-container">
+      <svg id="tree-svg">
+        <g id="tree-root"></g>
+      </svg>
+    </main>
+
+    <!-- ── Sidebar ─────────────────────────────────────────────────────────── -->
+    <aside>
+      <div class="sidebar-header">
+        <h2>Selected Pacts</h2>
+        <button id="reset-btn" type="button" disabled>Reset</button>
+      </div>
+
+      <!-- ── Tag filter panel ──────────────────────────────────────────────── -->
+      <div id="tag-panel">
+        <div class="tag-panel-header" id="tag-panel-toggle">
+          <span>Filter by Tag</span>
+          <span class="tag-panel-arrow">▾</span>
+          <button id="tag-clear-btn" type="button" style="display:none">× Clear</button>
+        </div>
+        <div class="tag-panel-body" id="tag-panel-body">
+
+          <div class="tag-group">
+            <span class="tag-group-label">Ranged</span>
+            <button class="tag-btn" data-tag="ranged"       style="--tc:#4caf50">Ranged</button>
+            <button class="tag-btn" data-tag="bow"          style="--tc:#66bb6a">Bow</button>
+            <button class="tag-btn" data-tag="crossbow"     style="--tc:#43a047">Crossbow</button>
+            <button class="tag-btn" data-tag="thrown"       style="--tc:#2e7d32">Thrown</button>
+          </div>
+
+          <div class="tag-group">
+            <span class="tag-group-label">Melee</span>
+            <button class="tag-btn" data-tag="melee"        style="--tc:#e04040">Melee</button>
+            <button class="tag-btn" data-tag="light-weapon" style="--tc:#ef5350">Light Weapon</button>
+            <button class="tag-btn" data-tag="two-handed"   style="--tc:#c62828">Two-Handed</button>
+            <button class="tag-btn" data-tag="shield"       style="--tc:#b71c1c">Shield</button>
+            <button class="tag-btn" data-tag="halberd"      style="--tc:#d32f2f">Halberd</button>
+          </div>
+
+          <div class="tag-group">
+            <span class="tag-group-label">Magic</span>
+            <button class="tag-btn" data-tag="magic"        style="--tc:#5ba0e0">Magic</button>
+            <button class="tag-btn" data-tag="staff"        style="--tc:#82b8e8">Staff / Wand</button>
+            <button class="tag-btn" data-tag="air"          style="--tc:#b3e5fc">Air</button>
+            <button class="tag-btn" data-tag="water"        style="--tc:#4dd0e1">Water</button>
+            <button class="tag-btn" data-tag="fire"         style="--tc:#ff8a65">Fire</button>
+            <button class="tag-btn" data-tag="earth"        style="--tc:#a5d6a7">Earth</button>
+          </div>
+
+          <div class="tag-group">
+            <span class="tag-group-label">Mechanic</span>
+            <button class="tag-btn" data-tag="echo"           style="--tc:#80cbc4">Echo</button>
+            <button class="tag-btn" data-tag="blindbag"       style="--tc:#ff7043">Blindbag</button>
+            <button class="tag-btn" data-tag="thorns"         style="--tc:#ce93d8">Thorns</button>
+            <button class="tag-btn" data-tag="regen"          style="--tc:#ffd54f">Regenerate</button>
+            <button class="tag-btn" data-tag="special-attack" style="--tc:#ffb300">Spec. Attack</button>
+          </div>
+
+          <div class="tag-group">
+            <span class="tag-group-label">Effect</span>
+            <button class="tag-btn" data-tag="heal"         style="--tc:#69bb6a">Heal</button>
+            <button class="tag-btn" data-tag="overheal"     style="--tc:#a5d6a7">Overheal</button>
+            <button class="tag-btn" data-tag="prayer"       style="--tc:#e8d8a0">Prayer</button>
+            <button class="tag-btn" data-tag="distance"     style="--tc:#90caf9">Distance</button>
+            <button class="tag-btn" data-tag="attack-speed" style="--tc:#f48fb1">Atk. Speed</button>
+          </div>
+
+        </div>
+      </div>
+
+      <ul id="summary-list">
+        <li class="summary-empty">Select nodes adjacent to the root to build your path.</li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <!-- Tooltip (absolutely positioned, JS-controlled) -->
+  <div id="tooltip" style="display:none">
+    <div class="tooltip-type"></div>
+    <h3 class="tooltip-name"></h3>
+    <p class="tooltip-desc"></p>
+    <p class="tooltip-hint"></p>
+  </div>
+
+  <script src="tree-data.js"></script>
+  <script src="tags-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
