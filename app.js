@@ -282,7 +282,7 @@ function renderSummary() {
       li.className = "summary-item";
       const name = document.createElement("span");
       name.className   = "summary-item-name";
-      name.textContent = n.name.length > 52 ? n.name.slice(0, 49) + "…" : n.name;
+      name.textContent = n.name;
       name.title       = n.name;
       li.appendChild(name);
       // Clicking a summary item pans to the node
