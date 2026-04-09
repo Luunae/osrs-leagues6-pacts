@@ -251,6 +251,46 @@ function renderCounter() {
     (rem === 0 ? " full" : used >= 30 ? " warn" : "");
 }
 
+function extractMergeableValue(name) {
+  const matches = [...name.matchAll(/\+(\d+)(%?)/g)];
+  if (matches.length !== 1) return null;
+  const m = matches[0];
+  return {
+    value:      parseInt(m[1]),
+    hasPercent: m[2] === '%',
+    prefix:     name.slice(0, m.index),
+    suffix:     name.slice(m.index + m[0].length),
+  };
+}
+
+function aggregateNodes(nodes) {
+  const mergedMap  = new Map();
+  const standalone = [];
+
+  for (const n of nodes) {
+    const p = extractMergeableValue(n.name);
+    if (p) {
+      const key = p.prefix + '\x00' + p.suffix;
+      if (!mergedMap.has(key)) {
+        mergedMap.set(key, { total: 0, hasPercent: p.hasPercent,
+                             prefix: p.prefix, suffix: p.suffix, nodes: [] });
+      }
+      const e = mergedMap.get(key);
+      e.total += p.value;
+      e.nodes.push(n);
+    } else {
+      standalone.push({ displayName: n.name, nodes: [n] });
+    }
+  }
+
+  const result = [];
+  for (const e of mergedMap.values()) {
+    const num = '+' + e.total + (e.hasPercent ? '%' : '');
+    result.push({ displayName: e.prefix + num + e.suffix, nodes: e.nodes });
+  }
+  return result.concat(standalone);
+}
+
 function renderSummary() {
   const list     = document.getElementById("summary-list");
   const resetBtn = document.getElementById("reset-btn");
@@ -277,16 +317,15 @@ function renderSummary() {
     hdr.style.setProperty("--cat-color", CAT_COLORS[type]);
     hdr.textContent = labels[type];
     list.appendChild(hdr);
-    for (const n of nodes) {
+    for (const { displayName, nodes: aggNodes } of aggregateNodes(nodes)) {
       const li   = document.createElement("li");
       li.className = "summary-item";
-      const name = document.createElement("span");
-      name.className   = "summary-item-name";
-      name.textContent = n.name;
-      name.title       = n.name;
-      li.appendChild(name);
-      // Clicking a summary item pans to the node
-      li.addEventListener("click", () => panToNode(n));
+      const nameEl = document.createElement("span");
+      nameEl.className   = "summary-item-name";
+      nameEl.textContent = displayName;
+      nameEl.title       = displayName;
+      li.appendChild(nameEl);
+      li.addEventListener("click", () => panToNode(aggNodes[0]));
       list.appendChild(li);
     }
   }
