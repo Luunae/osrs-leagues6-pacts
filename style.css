@@ -428,6 +428,93 @@ aside {
 }
 #tag-clear-btn:hover { border-color: var(--red); color: var(--red); }
 
+/* ── Drawer handle (mobile only) ───────────────────────────────────────────── */
+
+#drawer-handle {
+  display: none; /* hidden on desktop */
+}
+
+/* ── Mobile layout ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 700px) {
+  html, body { overflow: auto; }
+
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+    height: 100vh;
+  }
+
+  #tree-container {
+    padding-bottom: 3rem; /* keep tree clear of collapsed drawer */
+  }
+
+  aside {
+    grid-area: unset;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    overflow: hidden;
+    transition: height 0.25s ease;
+    z-index: 100;
+  }
+
+  aside.drawer-open {
+    height: 60vh;
+    overflow-y: auto;
+  }
+
+  #drawer-handle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+    height: 3rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .drawer-grip {
+    display: block;
+    width: 36px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 99px;
+    flex-shrink: 0;
+  }
+
+  .drawer-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    flex: 1;
+  }
+
+  .drawer-arrow {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    transition: transform 0.25s;
+  }
+
+  aside.drawer-open .drawer-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* sidebar-header hidden on mobile — the drawer handle replaces it */
+  .sidebar-header { display: none; }
+}
+
 /* ── Tagged node: cyan glow ring ───────────────────────────────────────────── */
 
 .tree-node.state-tagged .node-shape {

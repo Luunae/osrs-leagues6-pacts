@@ -429,6 +429,18 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("tag-panel").classList.toggle("open");
   });
 
+  // Mobile bottom drawer toggle
+  const aside = document.querySelector("aside");
+  document.getElementById("drawer-handle").addEventListener("click", () => {
+    aside.classList.toggle("drawer-open");
+    fitView();
+  });
+
+  // Collapse drawer when resizing to desktop width
+  window.matchMedia("(max-width: 700px)").addEventListener("change", e => {
+    if (!e.matches) aside.classList.remove("drawer-open");
+  });
+
   // Tag button clicks — same tag deselects, different tag replaces
   document.querySelectorAll(".tag-btn").forEach(btn => {
     btn.addEventListener("click", (e) => {
