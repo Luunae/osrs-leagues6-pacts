@@ -59,7 +59,7 @@ function isReachable(id) {
 
 // A node can be deselected only if removing it keeps the selection graph connected.
 function canDeselect(id) {
-  if (id === ROOT_ID) return state.selected.size <= 1;
+  if (id === ROOT_ID) return false;
   const trial = new Set(state.selected);
   trial.delete(id);
   if (trial.size === 0) return true;
